@@ -1,1 +1,6 @@
-// hi
+from flask import flask
+app = Flask(__Name__)
+@app.get("/")
+def testing():
+    return "Testing the base endpoint"
+app.run("localhost", port=8000)
